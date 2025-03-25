@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Service
 metadata:
-  name: hello-world-spring-boot
+  name: hello-world-spring-boot-service
   namespace: default
 spec:
   selector:
@@ -9,5 +9,5 @@ spec:
   ports:
     - protocol: TCP
       port: 8080
-      targetPort: 8080
+      targetPort: 8083
   type: LoadBalancer
