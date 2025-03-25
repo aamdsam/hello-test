@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Service
 metadata:
   name: hello-world-spring-boot
+  namespace: default
 spec:
   selector:
     app: hello-world-spring-boot
